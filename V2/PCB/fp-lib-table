@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PVG2-Library")(type "KiCad")(uri "${KIPRJMOD}/PVG2-Library.pretty")(options "")(descr ""))
+)
