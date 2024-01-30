@@ -354,6 +354,22 @@
     [
       "ce96c735-35a0-4e21-807b-18d2ddd1a455",
       "IDConditioner1"
+    ],
+    [
+      "4d23561e-c961-419f-b2ae-ea0223fab2c7",
+      "ConstantCurrentSource"
+    ],
+    [
+      "8b3ccaa9-f18e-443a-a99a-510414ad55b9",
+      "DualExternalConnector"
+    ],
+    [
+      "69616e77-2a23-40be-8edd-3995afc0e121",
+      "DualExternalConnector1"
+    ],
+    [
+      "b47942ca-e1ef-40b2-a425-07d85e456622",
+      "ConstantCurrentSource1"
     ]
   ],
   "text_variables": {}

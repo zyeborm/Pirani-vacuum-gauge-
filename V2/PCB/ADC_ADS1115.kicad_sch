@@ -501,6 +501,15 @@
     (uuid c7eb961f-79c7-441a-9178-b2f1cb8dfe2f)
   )
 
+  (label "Press0ADC_Filt" (at 116.205 62.23 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 01769233-1916-4778-a5e4-48654350258c)
+  )
+  (label "ID0ADC_Filt" (at 114.935 74.93 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid d9f079ea-306e-4a94-a575-17ac97e9d8c0)
+  )
+
   (hierarchical_label "Alert" (shape input) (at 205.105 81.28 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 2823414a-63e6-49f7-aefd-8b9c2485d501)
