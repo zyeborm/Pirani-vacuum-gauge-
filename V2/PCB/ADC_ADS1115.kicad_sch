@@ -320,8 +320,51 @@
         )
       )
     )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "flag power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
   )
 
+  (junction (at 178.435 66.675) (diameter 0) (color 0 0 0 0)
+    (uuid a05943c2-b144-44a6-b8b0-406212d60786)
+  )
   (junction (at 144.145 66.675) (diameter 0) (color 0 0 0 0)
     (uuid d00e6df4-de5b-40cd-af51-f0bbaeaa80e7)
   )
@@ -347,15 +390,15 @@
     (stroke (width 0) (type default))
     (uuid 0f82fab9-b0a2-400e-864e-22666c3b2c76)
   )
-  (wire (pts (xy 113.665 62.23) (xy 126.365 62.23))
+  (wire (pts (xy 91.44 61.595) (xy 118.745 61.595))
     (stroke (width 0) (type default))
     (uuid 1079f57a-d014-4b43-8be2-624d4b8021b4)
   )
-  (wire (pts (xy 126.365 83.82) (xy 182.245 83.82))
+  (wire (pts (xy 118.745 83.82) (xy 182.245 83.82))
     (stroke (width 0) (type default))
     (uuid 137d566a-2cfb-4bca-bd27-a4c4400d45c9)
   )
-  (wire (pts (xy 75.565 100.33) (xy 94.615 100.33))
+  (wire (pts (xy 53.34 74.295) (xy 72.39 74.295))
     (stroke (width 0) (type default))
     (uuid 1c194e56-c0b3-4ba4-86e2-b8165ec5e545)
   )
@@ -375,7 +418,7 @@
     (stroke (width 0) (type default))
     (uuid 389d1788-c631-4811-ab3c-ab7d8712f8cc)
   )
-  (wire (pts (xy 120.015 74.93) (xy 120.015 86.36))
+  (wire (pts (xy 112.395 74.295) (xy 112.395 86.36))
     (stroke (width 0) (type default))
     (uuid 38eba1ee-1879-4bc9-8410-8e63050b1963)
   )
@@ -387,7 +430,7 @@
     (stroke (width 0) (type default))
     (uuid 3ae0065f-4c63-4847-b3ca-0be13d88d1ec)
   )
-  (wire (pts (xy 173.99 66.675) (xy 192.405 66.675))
+  (wire (pts (xy 173.99 66.675) (xy 178.435 66.675))
     (stroke (width 0) (type default))
     (uuid 412b75a6-7cc2-4307-9eb9-3c93ae2fa804)
   )
@@ -403,7 +446,7 @@
     (stroke (width 0) (type default))
     (uuid 4a646c6e-35af-4458-aa2b-280668ee11dd)
   )
-  (wire (pts (xy 113.665 74.93) (xy 120.015 74.93))
+  (wire (pts (xy 91.44 74.295) (xy 112.395 74.295))
     (stroke (width 0) (type default))
     (uuid 4e376cac-0324-491b-9e89-0b04602f0843)
   )
@@ -427,17 +470,9 @@
     (stroke (width 0) (type default))
     (uuid 73375437-dfc9-4807-b328-8cfcf36f9123)
   )
-  (wire (pts (xy 75.565 113.03) (xy 94.615 113.03))
-    (stroke (width 0) (type default))
-    (uuid 7807c5a2-1854-41b2-914b-97d3b3103e15)
-  )
   (wire (pts (xy 151.765 66.675) (xy 154.305 66.675))
     (stroke (width 0) (type default))
     (uuid 7932a424-12a7-41e9-8af2-7dc8ef8850c2)
-  )
-  (wire (pts (xy 75.565 74.93) (xy 94.615 74.93))
-    (stroke (width 0) (type default))
-    (uuid 7956f4dc-7b02-4d39-92b5-af85d882b3cc)
   )
   (wire (pts (xy 146.685 66.675) (xy 144.145 66.675))
     (stroke (width 0) (type default))
@@ -451,7 +486,7 @@
     (stroke (width 0) (type default))
     (uuid a20e1113-bf34-4b51-99c0-0505dccf49b1)
   )
-  (wire (pts (xy 75.565 62.23) (xy 94.615 62.23))
+  (wire (pts (xy 53.34 61.595) (xy 72.39 61.595))
     (stroke (width 0) (type default))
     (uuid a942030f-3844-4f21-a569-4c74ccd748e5)
   )
@@ -467,7 +502,7 @@
     (stroke (width 0) (type default))
     (uuid bba280a0-6b11-4d9e-9235-95e6b6f8f58c)
   )
-  (wire (pts (xy 120.015 86.36) (xy 182.245 86.36))
+  (wire (pts (xy 112.395 86.36) (xy 182.245 86.36))
     (stroke (width 0) (type default))
     (uuid c7d745e7-77f9-4e39-b92e-817a1aecb0f6)
   )
@@ -479,7 +514,7 @@
     (stroke (width 0) (type default))
     (uuid d46d3991-66e8-4bca-97a4-3e80ae14b72d)
   )
-  (wire (pts (xy 126.365 62.23) (xy 126.365 83.82))
+  (wire (pts (xy 118.745 61.595) (xy 118.745 83.82))
     (stroke (width 0) (type default))
     (uuid de31b677-11b1-4e77-894a-1d8aee7e2817)
   )
@@ -491,6 +526,10 @@
     (stroke (width 0) (type default))
     (uuid df7d18d9-c800-47a9-86e1-0ac6a977c61f)
   )
+  (wire (pts (xy 178.435 66.675) (xy 192.405 66.675))
+    (stroke (width 0) (type default))
+    (uuid f0a6b8c4-935c-4fbd-bccf-7167edf0d181)
+  )
   (wire (pts (xy 133.35 57.15) (xy 133.35 66.675))
     (stroke (width 0) (type default))
     (uuid fd6f77fa-6681-4a0c-b195-d6247de92af0)
@@ -501,15 +540,19 @@
     (uuid c7eb961f-79c7-441a-9178-b2f1cb8dfe2f)
   )
 
-  (label "Press0ADC_Filt" (at 116.205 62.23 0) (fields_autoplaced)
+  (label "Press0ADC_Filt" (at 97.155 61.595 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 01769233-1916-4778-a5e4-48654350258c)
   )
-  (label "ID0ADC_Filt" (at 114.935 74.93 0) (fields_autoplaced)
+  (label "Press1ADC_Filt" (at 97.79 74.295 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d9f079ea-306e-4a94-a575-17ac97e9d8c0)
+    (uuid f92148dd-5b10-42c3-8523-97b6db55a4d4)
   )
 
+  (hierarchical_label "Aux1" (shape input) (at 113.665 100.33 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 06794173-fa23-44c7-8cc3-1cee301699a1)
+  )
   (hierarchical_label "Alert" (shape input) (at 205.105 81.28 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 2823414a-63e6-49f7-aefd-8b9c2485d501)
@@ -522,19 +565,15 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 6eb7ca3f-ca37-4707-b048-b747f8c2cd98)
   )
-  (hierarchical_label "ID0" (shape input) (at 75.565 74.93 180) (fields_autoplaced)
+  (hierarchical_label "Aux2" (shape input) (at 113.665 113.03 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 83271053-e051-4983-80bc-a60cfe4059f9)
+    (uuid 79894b15-5b38-4139-8652-8fbf2606f850)
   )
-  (hierarchical_label "ID1" (shape input) (at 75.565 113.03 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b5fa54c2-3e17-42e8-b63c-4e9795f0d251)
-  )
-  (hierarchical_label "Pressure0" (shape input) (at 75.565 62.23 180) (fields_autoplaced)
+  (hierarchical_label "Pressure0" (shape input) (at 53.34 61.595 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid bfc4e737-5d76-4634-b42d-340d6362ec41)
   )
-  (hierarchical_label "Pressure1" (shape input) (at 75.565 100.33 180) (fields_autoplaced)
+  (hierarchical_label "Pressure1" (shape input) (at 53.34 74.295 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid f17d00aa-ff88-47e6-9d61-b7b5b7116b47)
   )
@@ -542,7 +581,7 @@
   (symbol (lib_id "PGD-Library:C_Small") (at 144.145 73.025 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 037d86e6-2e85-4fc1-b92b-da1e1be57c70)
-    (property "Reference" "C121" (at 144.78 71.12 0)
+    (property "Reference" "C401" (at 144.78 71.12 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 144.78 74.93 0)
@@ -551,7 +590,7 @@
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 144.145 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL31A106KBHNNNE_C13585.html" (at 144.145 73.025 0)
+    (property "Datasheet" "~" (at 144.145 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC Part" "C13585" (at 144.145 73.025 0)
@@ -564,9 +603,6 @@
     (pin "2" (uuid 4f264077-0f49-4ffa-ab7e-edc12e180886))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "C121") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "C401") (unit 1)
         )
@@ -587,7 +623,7 @@
   (symbol (lib_id "power:GND") (at 207.645 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 062c9904-9669-4db2-9da2-5638a657e866)
-    (property "Reference" "#PWR0161" (at 207.645 106.68 0)
+    (property "Reference" "#PWR0407" (at 207.645 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.645 105.41 0)
@@ -602,11 +638,8 @@
     (pin "1" (uuid 02c149b6-19b4-4d48-9ce0-6cd3c4b1a0e7))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0161") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "#PWR0405") (unit 1)
+          (reference "#PWR0407") (unit 1)
         )
       )
       (project "Bincorp_485JoystickControllerV1"
@@ -625,7 +658,7 @@
   (symbol (lib_id "Analog_ADC:ADS1115IDGS") (at 192.405 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c870204-27c0-440e-a5ea-ec8661004ea5)
-    (property "Reference" "U107" (at 194.3609 73.1901 0)
+    (property "Reference" "U401" (at 194.3609 73.1901 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ADS1115IDGS" (at 194.3609 75.1111 0)
@@ -649,9 +682,6 @@
     (pin "9" (uuid 387b7f70-003e-4bb7-911d-42d3d41cd435))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "U107") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "U401") (unit 1)
         )
@@ -662,7 +692,7 @@
   (symbol (lib_id "PGD-Library:C_Small") (at 154.305 73.025 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2e8383c3-3de0-42d2-9fb8-afbdedd990b0)
-    (property "Reference" "C117" (at 155.575 71.755 0)
+    (property "Reference" "C402" (at 155.575 71.755 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "47uF" (at 155.575 74.295 0)
@@ -671,7 +701,7 @@
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (at 154.305 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/97327-CL31A476MPHNNNE/C96123" (at 154.305 73.025 0)
+    (property "Datasheet" "~" (at 154.305 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC Part" "C96123" (at 154.305 73.025 0)
@@ -684,11 +714,8 @@
     (pin "2" (uuid bd8cc11a-a5d3-4b26-a0ca-ac11ed70b8ab))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "C117") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "C405") (unit 1)
+          (reference "C402") (unit 1)
         )
       )
       (project "Bincorp_485JoystickControllerV1"
@@ -699,10 +726,43 @@
     )
   )
 
+  (symbol (lib_id "power:PWR_FLAG") (at 178.435 66.675 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 360a3ec1-0489-4ba7-ba9f-87a062bc37a8)
+    (property "Reference" "#FLG0101" (at 178.435 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 178.435 63.1731 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 178.435 66.675 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 178.435 66.675 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fe4f12cf-0f71-4be8-a6b4-65fe7b14a09d))
+    (instances
+      (project "PiraniGaugeDisplay"
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
+          (reference "#FLG0101") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
+          (reference "#FLG0401") (unit 1)
+        )
+      )
+      (project "Bincorp_485JoystickControllerV1"
+        (path "/5397a52a-2c54-44b7-9db3-8e4625eee83c"
+          (reference "#FLG0104") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 173.99 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3afe6965-ab4c-4701-a7c3-35a389138c7f)
-    (property "Reference" "#PWR0160" (at 173.99 82.55 0)
+    (property "Reference" "#PWR0405" (at 173.99 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 173.99 81.28 0)
@@ -717,11 +777,8 @@
     (pin "1" (uuid d80452cc-5742-4777-bc6b-849367962b23))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0160") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "#PWR0407") (unit 1)
+          (reference "#PWR0405") (unit 1)
         )
       )
       (project "Bincorp_485JoystickControllerV1"
@@ -740,7 +797,7 @@
   (symbol (lib_id "PGD-Library:R_Small") (at 207.645 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3aff4258-00a7-4819-9acd-a1be3f3cefe4)
-    (property "Reference" "R117" (at 211.455 96.52 0)
+    (property "Reference" "R402" (at 211.455 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4K7" (at 210.82 94.615 0)
@@ -749,7 +806,7 @@
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 207.645 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/18361-0805W8F4701T5E/C17673" (at 207.645 95.25 0)
+    (property "Datasheet" "~" (at 207.645 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC Part" "C17673" (at 207.645 95.25 90)
@@ -762,11 +819,8 @@
     (pin "2" (uuid ed50367c-1ada-44c7-a92b-b5835241db3d))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "R117") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "R401") (unit 1)
+          (reference "R402") (unit 1)
         )
       )
       (project "Output_4Ch_SoftLimits"
@@ -813,7 +867,7 @@
   (symbol (lib_id "power:GND") (at 154.305 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 457513b2-1c09-41b3-a0ff-eaed4e64e125)
-    (property "Reference" "#PWR0160" (at 154.305 82.55 0)
+    (property "Reference" "#PWR0403" (at 154.305 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 154.305 81.28 0)
@@ -828,9 +882,6 @@
     (pin "1" (uuid a53cbaf5-95d5-4681-a7b7-17d4aa053d13))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0160") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "#PWR0403") (unit 1)
         )
@@ -851,7 +902,7 @@
   (symbol (lib_id "power:GND") (at 144.145 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 484268ec-bf79-4481-b3e7-740bc8c6e546)
-    (property "Reference" "#PWR0159" (at 144.145 82.55 0)
+    (property "Reference" "#PWR0402" (at 144.145 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.145 81.28 0)
@@ -866,9 +917,6 @@
     (pin "1" (uuid b22ef56c-b48d-47e9-82f0-569fb43cba60))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0159") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "#PWR0402") (unit 1)
         )
@@ -889,7 +937,7 @@
   (symbol (lib_id "PGD-Library:R_Small") (at 137.795 66.675 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4eec839e-b544-467e-bf1f-9ee1f6abed79)
-    (property "Reference" "R115" (at 137.795 64.77 90)
+    (property "Reference" "R401" (at 137.795 64.77 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10R" (at 137.795 66.675 90)
@@ -898,7 +946,7 @@
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 137.795 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/18103-0805W8F100JT5E/C17415" (at 137.795 66.675 0)
+    (property "Datasheet" "~" (at 137.795 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC Part" "C17415" (at 137.795 66.675 90)
@@ -911,11 +959,8 @@
     (pin "2" (uuid d6631ac5-cb88-40b1-a8b0-132927779f04))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "R115") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "R402") (unit 1)
+          (reference "R401") (unit 1)
         )
       )
       (project "Bincorp_485JoystickControllerV1"
@@ -934,7 +979,7 @@
   (symbol (lib_id "PGD-Library:C_Small") (at 163.83 73.025 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a8498ce-f73b-449b-8ea0-31832a5578d5)
-    (property "Reference" "C118" (at 166.1541 72.3749 0)
+    (property "Reference" "C403" (at 166.1541 72.3749 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1uf" (at 166.1541 74.2959 0)
@@ -943,7 +988,7 @@
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 163.83 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/29074-CL21B105KBFNNNE/C28323" (at 163.83 73.025 0)
+    (property "Datasheet" "~" (at 163.83 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "JLC Part" "C28323" (at 163.83 73.025 90)
@@ -956,9 +1001,6 @@
     (pin "2" (uuid 492a1033-fa90-4920-80de-2b58e30fa1ea))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "C118") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "C403") (unit 1)
         )
@@ -990,7 +1032,7 @@
   (symbol (lib_id "PGD-Library:C_Small") (at 173.99 73.025 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5f41fe37-2eb6-45bd-9609-05cbf959e5aa)
-    (property "Reference" "C119" (at 176.53 72.39 0)
+    (property "Reference" "C404" (at 176.53 72.39 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100nf" (at 176.53 74.295 0)
@@ -999,7 +1041,7 @@
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 173.99 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://jlcpcb.com/partdetail/28983-CL21B104KCFNNNE/C28233" (at 173.99 73.025 0)
+    (property "Datasheet" "~" (at 173.99 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "LCSC Part" "C28233" (at 173.99 73.025 90)
@@ -1012,9 +1054,6 @@
     (pin "2" (uuid eee68bb4-26f2-4058-ab13-be48e81f2cfe))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "C119") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "C404") (unit 1)
         )
@@ -1069,9 +1108,6 @@
         )
       )
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0158") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "#PWR0401") (unit 1)
         )
@@ -1103,7 +1139,7 @@
   (symbol (lib_id "power:GND") (at 192.405 98.425 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b9574e03-c26e-4e5e-80a4-bc7d03874bb2)
-    (property "Reference" "#PWR0161" (at 192.405 104.775 0)
+    (property "Reference" "#PWR0406" (at 192.405 104.775 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 192.405 103.505 0)
@@ -1118,11 +1154,8 @@
     (pin "1" (uuid 41ba40f9-eebe-4208-9a97-0c8499575912))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0161") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "#PWR0404") (unit 1)
+          (reference "#PWR0406") (unit 1)
         )
       )
       (project "Bincorp_485JoystickControllerV1"
@@ -1141,7 +1174,7 @@
   (symbol (lib_id "PGD-Library:FerriteBead_Small") (at 149.225 66.675 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bfdf8113-8684-45e5-a2c5-2428b3df7acf)
-    (property "Reference" "FB102" (at 149.1869 61.9633 90)
+    (property "Reference" "FB401" (at 149.1869 61.9633 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "300m" (at 149.1869 63.8843 90)
@@ -1163,9 +1196,6 @@
     (pin "2" (uuid 55bf9c67-3b4f-4a42-bb04-9e945e63597b))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "FB102") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
           (reference "FB401") (unit 1)
         )
@@ -1191,7 +1221,7 @@
   (symbol (lib_id "power:GND") (at 163.83 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc7a42b3-5a85-436f-8eca-5e604b46c718)
-    (property "Reference" "#PWR0159" (at 163.83 82.55 0)
+    (property "Reference" "#PWR0404" (at 163.83 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 163.83 81.28 0)
@@ -1206,11 +1236,8 @@
     (pin "1" (uuid 42b26ff1-e272-4ea8-ad1c-174628baa20e))
     (instances
       (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
-          (reference "#PWR0159") (unit 1)
-        )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690"
-          (reference "#PWR0406") (unit 1)
+          (reference "#PWR0404") (unit 1)
         )
       )
       (project "Bincorp_485JoystickControllerV1"
@@ -1226,71 +1253,21 @@
     )
   )
 
-  (sheet (at 94.615 73.025) (size 19.05 3.81) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid a09382a6-b760-4a80-9d7c-9292f9a36033)
-    (property "Sheetname" "IDConditioner" (at 94.615 72.3134 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "IDConditioner.kicad_sch" (at 94.615 77.4196 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "FilterIn" input (at 94.615 74.93 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 507c4412-d39f-4efd-a4b1-80f5fc2927d9)
-    )
-    (pin "FilterOut" input (at 113.665 74.93 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f1d223f4-564c-4d8d-9e27-76df35d52efa)
-    )
-    (instances
-      (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690" (page "7"))
-      )
-    )
-  )
-
-  (sheet (at 94.615 111.125) (size 19.05 3.81) (fields_autoplaced)
-    (stroke (width 0.1524) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid ce96c735-35a0-4e21-807b-18d2ddd1a455)
-    (property "Sheetname" "IDConditioner1" (at 94.615 110.4134 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheetfile" "IDConditioner.kicad_sch" (at 94.615 115.5196 0)
-      (effects (font (size 1.27 1.27)) (justify left top) hide)
-    )
-    (pin "FilterIn" input (at 94.615 113.03 180)
-      (effects (font (size 1.27 1.27)) (justify left))
-      (uuid 2fa20078-11c8-40b2-b0de-ba9d01989959)
-    )
-    (pin "FilterOut" input (at 113.665 113.03 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid f0b50d81-2fff-4479-b974-6120e1905a5b)
-    )
-    (instances
-      (project "PiraniGaugeDisplay"
-        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/7c57b138-c155-412b-ab67-530ba4c17690" (page "8"))
-      )
-    )
-  )
-
-  (sheet (at 94.615 60.325) (size 19.05 3.81)
+  (sheet (at 72.39 59.69) (size 19.05 3.81)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid cfb47602-65e7-48ab-a99f-c6b1c042088b)
-    (property "Sheetname" "10VInputConditioner" (at 95.885 59.055 0)
+    (property "Sheetname" "10VInputConditioner" (at 73.66 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "10VInputConditioner.kicad_sch" (at 94.615 64.7196 0)
+    (property "Sheetfile" "10VInputConditioner.kicad_sch" (at 72.39 64.0846 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "FilterOut" input (at 113.665 62.23 0)
+    (pin "FilterOut" input (at 91.44 61.595 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 0b7fc57b-b8b6-4627-9040-43ff995195b8)
     )
-    (pin "FilterIn" input (at 94.615 62.23 180)
+    (pin "FilterIn" input (at 72.39 61.595 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 857360d6-d9d7-46df-9bc5-6c236aa4ed8a)
     )
@@ -1301,21 +1278,21 @@
     )
   )
 
-  (sheet (at 94.615 98.425) (size 19.05 3.81)
+  (sheet (at 72.39 72.39) (size 19.05 3.81)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid d9c0c721-1f14-4928-9cb1-b9463a050c2b)
-    (property "Sheetname" "10VInputConditioner1" (at 94.615 97.79 0)
+    (property "Sheetname" "10VInputConditioner1" (at 72.39 71.755 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "10VInputConditioner.kicad_sch" (at 94.615 102.8196 0)
+    (property "Sheetfile" "10VInputConditioner.kicad_sch" (at 72.39 76.7846 0)
       (effects (font (size 1.27 1.27)) (justify left top) hide)
     )
-    (pin "FilterOut" input (at 113.665 100.33 0)
+    (pin "FilterOut" input (at 91.44 74.295 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 7c413965-bff9-4615-8cfa-afa5cd091af9)
     )
-    (pin "FilterIn" input (at 94.615 100.33 180)
+    (pin "FilterIn" input (at 72.39 74.295 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 122b6152-c8dd-4e01-9e29-09cd93c255b2)
     )
