@@ -1,0 +1,55 @@
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'win32'
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.9.16 (main, Apr  9 2023, 05:22:13) [MSC v.1934 64 bit (AMD64)]'
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.2
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x0000020D3EC019D0>
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with R802 as a reference
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'R802'
+Located on: ['CCSv3']
+With filenames: ['CCSV2.kicad_sch']
+With sheet_id:['CCSv3']
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('R1602', ['CCSv2']), ('R802', ['CCSv3'])]
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'CCSv3', file:'CCSV2.kicad_sch'
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['CCSv2']]
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['CCSv3']
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(2410, 155)
+02-13 17:31:20 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(1971, 155)
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'CCSv3', file:'CCSV2.kicad_sch'
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['CCSv2']]
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['CCSv2']]
+on level: ['CCSv3']
+with tracks=True, zone=True, text=True, text=True, intersecting=False, remove=False, locked footprints=False, group_only=False
+02-13 17:31:22 root 332:updating GUI message: 'Preparing for replication'
+02-13 17:31:22 root 337:updating GUI with: 0
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
+02-13 17:31:22 root 337:updating GUI with: 50
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
+02-13 17:31:22 root 332:updating GUI message: 'Replicating footprints'
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['CCSv2']
+02-13 17:31:22 root 332:updating GUI message: 'Replicating tracks'
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 977:Replicating tracks
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 983:Replicating tracks on sheet ['CCSv2']
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['CCSv2'] :[('/DualExternalConnector1/Identification', '/DualExternalConnector/Identification'), ('Net-(R801-Pad2)', 'Net-(R1601-Pad2)'), ('unconnected-(U801-Pad5)', 'unconnected-(U1601-Pad5)'), ('Net-(R801-Pad1)', 'Net-(R1601-Pad1)'), ('Net-(D801-K)', 'Net-(D1601-K)'), ('+3.3V', '+3.3V'), ('Net-(D801-A)', 'Net-(D1601-A)'), ('Net-(R802-Pad1)', 'Net-(R1602-Pad1)'), ('unconnected-(U801-Pad8)', 'unconnected-(U1601-Pad8)')]
+02-13 17:31:22 root 332:updating GUI message: 'Replicating zones'
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1047:Replicating zones
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1054:Replicating zones on sheet ['CCSv2']
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 766:Net pairs for sheet ['CCSv2'] :[('/DualExternalConnector1/Identification', '/DualExternalConnector/Identification'), ('Net-(R801-Pad2)', 'Net-(R1601-Pad2)'), ('unconnected-(U801-Pad5)', 'unconnected-(U1601-Pad5)'), ('Net-(R801-Pad1)', 'Net-(R1601-Pad1)'), ('Net-(D801-K)', 'Net-(D1601-K)'), ('+3.3V', '+3.3V'), ('Net-(D801-A)', 'Net-(D1601-A)'), ('Net-(R802-Pad1)', 'Net-(R1602-Pad1)'), ('unconnected-(U801-Pad8)', 'unconnected-(U1601-Pad8)')]
+02-13 17:31:22 root 332:updating GUI message: 'Replicating text'
+02-13 17:31:22 root 337:updating GUI with: 0
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1136:Replicating text
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1143:Replicating text on sheet ['CCSv2']
+02-13 17:31:22 root 332:updating GUI message: 'Replicating drawings'
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1187:Replicating drawings
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1193:Replicating drawings on sheet ['CCSv2']
+02-13 17:31:22 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete

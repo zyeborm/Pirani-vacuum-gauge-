@@ -44,6 +44,71 @@
         )
       )
     )
+    (symbol "PGD-Library:D_Schottky" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "D_Schottky" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "diode Schottky" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Schottky diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "D_Schottky_0_1"
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 1.27)
+            (xy 1.27 -1.27)
+            (xy -1.27 0)
+            (xy 1.27 1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.905 0.635)
+            (xy -1.905 1.27)
+            (xy -1.27 1.27)
+            (xy -1.27 -1.27)
+            (xy -0.635 -1.27)
+            (xy -0.635 -0.635)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "D_Schottky_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "PGD-Library:D_Zener" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
@@ -96,6 +161,89 @@
         )
       )
       (symbol "D_Zener_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "PGD-Library:LED" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (at 0 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "LED" (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "LED diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Light emitting diode" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "LED_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy 1.27 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.048 -0.762)
+            (xy -4.572 -2.286)
+            (xy -3.81 -2.286)
+            (xy -4.572 -2.286)
+            (xy -4.572 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.778 -0.762)
+            (xy -3.302 -2.286)
+            (xy -2.54 -2.286)
+            (xy -3.302 -2.286)
+            (xy -3.302 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "LED_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
           (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -547,6 +695,9 @@
   (junction (at 82.55 36.195) (diameter 0) (color 0 0 0 0)
     (uuid 7eb112c9-7227-4757-920e-95a7cfc4c79d)
   )
+  (junction (at 104.775 55.245) (diameter 0) (color 0 0 0 0)
+    (uuid 81883ce0-dc9f-4461-868d-60f5d19072a8)
+  )
   (junction (at 93.345 36.195) (diameter 0) (color 0 0 0 0)
     (uuid c65c0d1d-5158-45b1-8a67-57a3de608ecf)
   )
@@ -554,6 +705,10 @@
   (wire (pts (xy 116.84 55.245) (xy 121.285 55.245))
     (stroke (width 0) (type default))
     (uuid 126412f1-1035-4195-8389-b4ce7f5f4d10)
+  )
+  (wire (pts (xy 116.84 62.865) (xy 116.84 65.405))
+    (stroke (width 0) (type default))
+    (uuid 161bc8b1-c220-4315-bd24-3346eb3efe1b)
   )
   (wire (pts (xy 82.55 36.195) (xy 93.345 36.195))
     (stroke (width 0) (type default))
@@ -587,6 +742,14 @@
     (stroke (width 0) (type default))
     (uuid 429c4676-0895-437c-8a65-173527b5754d)
   )
+  (wire (pts (xy 104.775 55.245) (xy 104.775 63.5))
+    (stroke (width 0) (type default))
+    (uuid 4d3f3d82-9e91-4844-ad6e-d2e27ff9b75f)
+  )
+  (wire (pts (xy 104.775 71.12) (xy 104.775 76.835))
+    (stroke (width 0) (type default))
+    (uuid 515b1a3d-656c-4431-a624-d9fa6bc00404)
+  )
   (wire (pts (xy 111.76 49.53) (xy 98.425 49.53))
     (stroke (width 0) (type default))
     (uuid 5ff9d32d-0fe0-48d3-b19d-29ac05623cf4)
@@ -614,6 +777,10 @@
   (wire (pts (xy 67.31 45.085) (xy 67.31 49.53))
     (stroke (width 0) (type default))
     (uuid 85f03241-1502-43b1-9fdc-3e5dbf577431)
+  )
+  (wire (pts (xy 116.84 70.485) (xy 116.84 75.565))
+    (stroke (width 0) (type default))
+    (uuid 87cad135-ec8a-4e9c-8f18-0437edf1c245)
   )
   (wire (pts (xy 67.31 37.465) (xy 67.31 36.195))
     (stroke (width 0) (type default))
@@ -655,6 +822,82 @@
   (hierarchical_label "Drv_In" (shape input) (at 60.96 65.405 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid f2941df7-3bf7-4747-8bf5-1aa046a89aae)
+  )
+
+  (symbol (lib_id "PGD-Library:LED") (at 116.84 59.055 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 005d08b6-7458-4aaa-88a8-cf02f0ce5580)
+    (property "Reference" "D107" (at 121.285 60.96 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "LED" (at 120.65 59.055 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "LED_SMD:LED_0603_1608Metric" (at 116.84 59.055 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 116.84 59.055 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C72043" (at 116.84 59.055 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLC Part" "Basic Part" (at 116.84 59.055 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 870e8348-f31d-4b18-97d7-da1fc00c5f48))
+    (pin "2" (uuid 7f0fcede-8b8b-404b-b04a-9694da95567a))
+    (instances
+      (project "PiraniGaugeDisplay"
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
+          (reference "D107") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/e3136451-e0af-4f12-bbb1-d49301849459"
+          (reference "D902") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/6580a6bc-97f3-47df-beb2-2a2c8378b310"
+          (reference "D1102") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c6c9b581-ecb2-4eb6-a717-c813e7136616"
+          (reference "D1202") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c065730f-a554-4ca4-88f3-fde561096e4d"
+          (reference "D1302") (unit 1)
+        )
+      )
+      (project "Output_4Ch_SoftLimits"
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833"
+          (reference "D101") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/0a38b5da-d310-49fa-b13a-b8ca374007b3"
+          (reference "D501") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/78e202ab-5c8d-4773-a7da-d36ce95b1f98"
+          (reference "D201") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/a76dde9d-37c9-4339-8b4f-1cc8071c8a84"
+          (reference "D301") (unit 1)
+        )
+      )
+      (project "Bincorp_485JoystickControllerV1"
+        (path "/5397a52a-2c54-44b7-9db3-8e4625eee83c"
+          (reference "D112") (unit 1)
+        )
+      )
+      (project "Output_2ch_FaultTolerant"
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/55c8b6dc-c0d3-477c-9d7b-e6e226468a10"
+          (reference "D301") (unit 1)
+        )
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/78a207d6-244a-4c1f-b2d0-ef348e13743c"
+          (reference "D601") (unit 1)
+        )
+      )
+      (project "IO_LowPower_V1"
+        (path "/93d47f45-2f79-43d0-8e32-97e90811695d/9d9427be-435a-4790-8db2-595f5ef761ab"
+          (reference "D201") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:R_Small") (at 82.55 40.64 0) (unit 1)
@@ -864,6 +1107,118 @@
     )
   )
 
+  (symbol (lib_id "PGD-Library:D_Schottky") (at 104.775 67.31 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 954c4011-a8aa-4d64-b437-fc8fdefb0a0f)
+    (property "Reference" "D102" (at 107.315 66.3575 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SS54" (at 107.315 68.8975 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Diode_SMD:D_SMA" (at 104.775 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 104.775 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C22452" (at 104.775 67.31 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLC Part" "Basic Part" (at 104.775 67.31 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 94e9e469-24f9-4a04-bae7-d79fd27a6a74))
+    (pin "2" (uuid 1cc4f8c9-3328-440c-a112-4517b521330a))
+    (instances
+      (project "PiraniGaugeDisplay"
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
+          (reference "D102") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/e3136451-e0af-4f12-bbb1-d49301849459"
+          (reference "D903") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/6580a6bc-97f3-47df-beb2-2a2c8378b310"
+          (reference "D1103") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c6c9b581-ecb2-4eb6-a717-c813e7136616"
+          (reference "D1203") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c065730f-a554-4ca4-88f3-fde561096e4d"
+          (reference "D1303") (unit 1)
+        )
+      )
+      (project "Bincorp_485JoystickControllerV1"
+        (path "/5397a52a-2c54-44b7-9db3-8e4625eee83c"
+          (reference "D105") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 116.84 75.565 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b27f9c1f-60c9-45e1-a1a9-45a6177045dd)
+    (property "Reference" "#PWR0150" (at 116.84 81.915 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 116.84 79.7005 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 116.84 75.565 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 116.84 75.565 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cfd2559f-e7dc-41ac-9686-f8038d7e5cc5))
+    (instances
+      (project "PiraniGaugeDisplay"
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
+          (reference "#PWR0150") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/e3136451-e0af-4f12-bbb1-d49301849459"
+          (reference "#PWR0904") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/6580a6bc-97f3-47df-beb2-2a2c8378b310"
+          (reference "#PWR01104") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c6c9b581-ecb2-4eb6-a717-c813e7136616"
+          (reference "#PWR01204") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c065730f-a554-4ca4-88f3-fde561096e4d"
+          (reference "#PWR01304") (unit 1)
+        )
+      )
+      (project "Output_4Ch_SoftLimits"
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/78e202ab-5c8d-4773-a7da-d36ce95b1f98"
+          (reference "#PWR0227") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833"
+          (reference "#PWR0105") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/a76dde9d-37c9-4339-8b4f-1cc8071c8a84"
+          (reference "#PWR0309") (unit 1)
+        )
+      )
+      (project "Bincorp_485JoystickControllerV1"
+        (path "/5397a52a-2c54-44b7-9db3-8e4625eee83c"
+          (reference "#PWR0169") (unit 1)
+        )
+      )
+      (project "Output_2ch_FaultTolerant"
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/af209f49-7f24-4fa8-ab98-ee0418753dcc"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+      (project "IO_LowPower_V1"
+        (path "/93d47f45-2f79-43d0-8e32-97e90811695d/9d9427be-435a-4790-8db2-595f5ef761ab"
+          (reference "#PWR0202") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 82.55 74.295 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b802b268-7bff-43b4-9252-0fa58d49a3e6)
@@ -1002,6 +1357,140 @@
         )
         (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/6580a6bc-97f3-47df-beb2-2a2c8378b310"
           (reference "R1103") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "PGD-Library:R_Small") (at 116.84 67.945 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e81e2179-6dd2-4962-bd7d-cd6e360b801e)
+    (property "Reference" "R113" (at 120.6508 68.7401 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "10K" (at 120.0158 66.8351 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 116.84 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 116.84 67.945 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC Part" "C17414" (at 116.84 67.945 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLC Part" "Basic Part" (at 116.84 67.945 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 67910b08-576c-421c-a3a3-d4a7a037b807))
+    (pin "2" (uuid 2d763627-6953-4ae8-9f51-b04bddd6aecf))
+    (instances
+      (project "PiraniGaugeDisplay"
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
+          (reference "R113") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/e3136451-e0af-4f12-bbb1-d49301849459"
+          (reference "R904") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/6580a6bc-97f3-47df-beb2-2a2c8378b310"
+          (reference "R1104") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c6c9b581-ecb2-4eb6-a717-c813e7136616"
+          (reference "R1204") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c065730f-a554-4ca4-88f3-fde561096e4d"
+          (reference "R1304") (unit 1)
+        )
+      )
+      (project "Output_6Ch_SoftLimits"
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/78e202ab-5c8d-4773-a7da-d36ce95b1f98"
+          (reference "R201") (unit 1)
+        )
+      )
+      (project "Bincorp_485JoystickControllerV1"
+        (path "/5397a52a-2c54-44b7-9db3-8e4625eee83c"
+          (reference "R123") (unit 1)
+        )
+      )
+      (project "Output_2ch_FaultTolerant"
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/f2053247-ecbd-4027-927e-0040ec911824"
+          (reference "R202") (unit 1)
+        )
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/9f457166-1cf9-4cd9-9583-61d2b98e43ee"
+          (reference "R402") (unit 1)
+        )
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/55c8b6dc-c0d3-477c-9d7b-e6e226468a10"
+          (reference "R303") (unit 1)
+        )
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/78a207d6-244a-4c1f-b2d0-ef348e13743c"
+          (reference "R603") (unit 1)
+        )
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/af209f49-7f24-4fa8-ab98-ee0418753dcc"
+          (reference "R503") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 104.775 76.835 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid fc997824-257e-4090-b8dd-679a94e2169e)
+    (property "Reference" "#PWR0150" (at 104.775 83.185 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 104.775 80.9705 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 104.775 76.835 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 104.775 76.835 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 86c03560-d1a1-4112-81e2-174ca54307ea))
+    (instances
+      (project "PiraniGaugeDisplay"
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f"
+          (reference "#PWR0150") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/e3136451-e0af-4f12-bbb1-d49301849459"
+          (reference "#PWR0905") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/6580a6bc-97f3-47df-beb2-2a2c8378b310"
+          (reference "#PWR01105") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c6c9b581-ecb2-4eb6-a717-c813e7136616"
+          (reference "#PWR01205") (unit 1)
+        )
+        (path "/43dd4952-cc68-4687-8eb3-b9ec0d7c6e3f/c065730f-a554-4ca4-88f3-fde561096e4d"
+          (reference "#PWR01305") (unit 1)
+        )
+      )
+      (project "Output_4Ch_SoftLimits"
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/78e202ab-5c8d-4773-a7da-d36ce95b1f98"
+          (reference "#PWR0227") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833"
+          (reference "#PWR0105") (unit 1)
+        )
+        (path "/4b0f5b1c-07df-47c2-aaba-21ba49ee7833/a76dde9d-37c9-4339-8b4f-1cc8071c8a84"
+          (reference "#PWR0309") (unit 1)
+        )
+      )
+      (project "Bincorp_485JoystickControllerV1"
+        (path "/5397a52a-2c54-44b7-9db3-8e4625eee83c"
+          (reference "#PWR0169") (unit 1)
+        )
+      )
+      (project "Output_2ch_FaultTolerant"
+        (path "/822dc713-1e34-416c-8054-f7a476bb7106/af209f49-7f24-4fa8-ab98-ee0418753dcc"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+      (project "IO_LowPower_V1"
+        (path "/93d47f45-2f79-43d0-8e32-97e90811695d/9d9427be-435a-4790-8db2-595f5ef761ab"
+          (reference "#PWR0202") (unit 1)
         )
       )
     )
